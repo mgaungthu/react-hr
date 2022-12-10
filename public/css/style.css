@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+html,body {
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    font-size: 1.1rem;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#mobilewrapper {
+    max-width: 480px;
+    margin: 0 auto;
+    background: url("../images/bg-wave.svg") top center no-repeat;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.none-bg {
+    background: none!important;
+}
+
+.author {
+    border: 0;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 25%);
+    float: left;
+    margin-right: 15px;
+}
+
+.desc {
+    overflow: hidden;
+}
+
+.desc .name,.desc .position,.desc .dept {
+    color: #fff;
+}
+
+.desc .name {
+    margin-top: 5px;
+}
+
+.desc .position {
+    display: block;
+}
+
+.date {
+    font-size:1.2rem;
+    margin-top:0px;
+    margin-bottom: 0px;
+}
+
+.title1 {
+    font-size:1.2rem;
+}
+
+.checkin-time,.checkout-time {
+    font-size: 1.4rem;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #fda1ba;
+    border-bottom: 3px solid;
+}
+
+.front-entry {
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px 8px 8px 8px;
+    margin-bottom: 20px;
+}
+
+.front-entry img {
+    width: 50px;
+}
+
+.front-entry p {
+    font-size: 18px;
+    margin-top:5px;
+    color:#fda1ba;
+}
+
+
+/* Check In page */
+
+.nav-panel {
+    /* height: 45px; */
+    background-color: #206aed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.f-left {
+    float: left;
+}
+
+.nav-title p {
+    font-size: 1.2rem;
+}
+
+#location-map { height: 300px;background-color: #ccc;
+    /* pointer-events: none; */
+ }
+
+.curtime {
+    font-size: 2.4rem;
+    color:#797a7c;
+    font-weight: 600;
+}
+
+.checkin-date {
+    color: #797a7c;
+    font-size: 1.45rem;
+}
+
+.checkin-text {
+    color: #797a7c;
+}
+
+.check-btn {
+    text-align: center;
+    background: #206aed;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 100px;
+    padding-top: 8%;
+    overflow: hidden;
+}
+
+.check-btn.out {
+    background: #aed581;
+}
+
+.check-btn p {
+    color: #fff;
+    margin: 0;
+}
+
+.check-btn.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.dp48 {
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}
+
+.login-box {
+    background: #fff;
+    border-radius: 10px;
+}
+
+.my-btn {
+    background: #206aed;
+}
+
+.collection {
+    border: 0px;
+    margin: 0;
+}
+
+.collection .collection-item {
+    background: transparent;
+}
+
+.secondary-content.ck {
+    padding-right: 38px;
+}
+
+.attendance-box {
+    background: #fff;
+    min-height: 94vh;
+    border-radius: 10px 10px;
+    position: relative;
+    top: -2px;
+}
+
+.status {
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#load{
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:9999;
+    background:url("../images/loading.gif") no-repeat center center #fff;
+    top: 0;
+    background-size: 48px;
+}
+
+
+@media only screen and (max-width:821px) and (min-width: 765px) {
+    #mobilewrapper {
+        max-width: 100%;
+        background-size:cover;
+    }
+
+    .check-btn {
+        padding-top: 5%;
+    }
+}
